@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT Sans|PT Sans Caption|PT Mono">
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/projects.css">
+	<link rel="stylesheet" type="text/css" href="css/projects-ind.css">
 	<script src="scripts/projects.js" defer></script>
 </head>
 <body class="lightTheme">
@@ -53,30 +54,34 @@
 					</label>
 				</div>
 			</div>
-			<div class="card project">
+			<div class="card project" data-tags="js">
 				<input class="open-description-inp" type="checkbox" id="pj-1">
 				<div class="head">
 					<div class="head-img">
 						<img src="./imgs/avatar.jpg" alt="Image">
 					</div>
 					<div class="head-text">
-						<h1>Title</h1>
-						<div class="tags">
-							<div>Tag 1</div>
-							<div>Tag 2</div>
-							<div>Tag 3</div>
+						<div class="head-title">
+							<h1>Вертик</h1>
+							<h2>18.03.2020</h2>
 						</div>
-						<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto asperiores ex minus provident veniam dolor quaerat, voluptatum perspiciatis odit maxime commodi deleniti dolore, ullam fugit ipsum ipsam consectetur quo nobis!</div>
+						<div class="tags">
+							<div>Javascript</div>
+						</div>
+						<div class="head-description">
+							<p>Простой платформер. В игре есть звуки, двигающиеся платформы, двери, открывающиеся рычагом, звёзды для сбора, противник.
+								Написана полностью с нуля. Мой первый проект на Javascript.</p>
+						</div>
 						<div class="head-footer">
 							<label for="pj-1" class="open-description">
 								<span>Подробнее</span>
 							</label>
 							<div class="separator"></div>
-							<a href="">
-								<img src="./imgs/open-icon-dark.svg" alt="Github" class="icon h-dark">
-								<img src="./imgs/open-icon-light.svg" alt="Github" class="icon h-light">
+							<a href="https://mixelte.github.io/Jumper/wwwroot/index.html" target="_blank">
+								<img src="./imgs/open-icon-dark.svg" alt="Open" class="icon h-dark">
+								<img src="./imgs/open-icon-light.svg" alt="Open" class="icon h-light">
 							</a>
-							<a href="">
+							<a href="https://github.com/MixelTe/Jumper" target="_blank">
 								<img src="./imgs/github-icon-dark.png" alt="Github" class="icon h-dark">
 								<img src="./imgs/github-icon-light.png" alt="Github" class="icon h-light">
 							</a>
@@ -84,7 +89,36 @@
 					</div>
 				</div>
 				<div class="description">
-					<div style="height: 20em; background-color: gray;"></div>
+					<div class="side-img">
+						<img src="./imgs/jumper/screen1.jpg" alt="Image">
+						<div>
+							<p>
+								Однажды Вертик пошёл за земляникой. Она росла на далёкой поляне в середине дремучего леса.
+								По дороге Вертику встретилось множество препятствий и даже недоброжелатели, но он преодалеет все невзгоды.
+							</p>
+							<p>
+								Управление в игре с помощью стрелок и пробела, либо WSAD. Правый Ctrl - сила земли, для защиты от Ходотунов
+							</p>
+						</div>
+					</div>
+					<div class="cards-img">
+						<div class="card-img">
+							<img src="./imgs/jumper/door.png" alt="Image">
+							<div>Двери открываются рычагом</div>
+						</div>
+						<div class="card-img">
+							<img src="./imgs/jumper/jump.png" alt="Image">
+							<div>На каждом уровне спрятаны звёзды</div>
+						</div>
+						<div class="card-img">
+							<img src="./imgs/jumper/portal.png" alt="Image">
+							<div>Переход на следующий уровень</div>
+						</div>
+						<div class="card-img">
+							<img src="./imgs/jumper/enemy.png" alt="Image">
+							<div>Путь преграждает Ходотун</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
