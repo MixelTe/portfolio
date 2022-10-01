@@ -8,21 +8,3 @@ function onFilter(el)
 	console.log(v, el.checked);
 }
 
-
-const popup = document.getElementById("popup");
-const popupImgEl = document.getElementById("popup-img");
-document.getElementById("popup-close").addEventListener("click", popupClose);
-popup.addEventListener("click", e => { if (e.target == popup) popupClose() });
-
-const imgs = document.querySelectorAll(".pimg");
-imgs.forEach(el => el.addEventListener("click", popupImg.bind(el, el)))
-
-function popupImg(img)
-{
-	popup.style.display = "flex";
-	popupImgEl.setAttribute("src", img.getAttribute("src"));
-}
-function popupClose()
-{
-	popup.style.display = "none"
-}
