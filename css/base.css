@@ -42,6 +42,9 @@ a {
 	text-decoration: none;
 	text-decoration-skip-ink: none;
 }
+.link:hover {
+	text-decoration: underline;
+}
 
 
 header {
@@ -94,6 +97,13 @@ header a:hover::after, header a:focus::after, header a:disabled::after {
 	border-radius: 50%;
 	border: solid var(--color) 0.1em;
 	z-index: 2;
+	cursor: pointer;
+	transition-property: translate, box-shadow;
+	transition-duration: 0.1s;
+}
+.theme-switcher:hover {
+	box-shadow: inset -2px 4px 3px -1px #ffffff9c, inset 2px -2px 3px 1px black, 0 6px 4px 2px gray;
+	translate: 0 -6px;
 }
 .theme-switcher svg {
 	width: 2em;
