@@ -188,3 +188,31 @@ p:last-child {
 	border-radius: 0.5em;
 	margin-bottom: 0.5em;
 }
+
+h1 {
+	position: relative;
+}
+h1 a {
+	position: absolute;
+	left: -1.7em;
+	top: -25%;
+	width: 1.8em;
+	height: 150%;
+	border-radius: 0.3em;
+	background-image: url(../imgs/link-dark.svg);
+	background-size: 55%;
+	background-position: 70%;
+	background-repeat: no-repeat;
+	scale: 0;
+	transition-property: scale;
+	transition-duration: 0.1s;
+	transform-origin: right;
+	pointer-events: none;
+}
+.darkTheme h1 a {
+	background-image: url(../imgs/link-light.svg);
+}
+h1:hover a {
+	pointer-events: all;
+	scale: 1;
+}
