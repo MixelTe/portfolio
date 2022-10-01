@@ -83,7 +83,7 @@ header a:hover::after, header a:focus::after, header a:disabled::after {
 	transform-origin: left;
 	scale: 1;
 }
-.theme-switcher {
+.theme-switcher, .totop {
 	position: fixed;
 	width: 2em;
 	height: 2em;
@@ -100,8 +100,9 @@ header a:hover::after, header a:focus::after, header a:disabled::after {
 	cursor: pointer;
 	transition-property: translate, box-shadow;
 	transition-duration: 0.1s;
+	box-shadow: inset 0 0 0 0 gray, inset 0 0 0 0 gray, 0 0 4px 0 var(--color);
 }
-.theme-switcher:hover {
+.theme-switcher:hover, .totop:hover {
 	box-shadow: inset -2px 4px 3px -1px #ffffff9c, inset 2px -2px 3px 1px black, 0 6px 4px 2px gray;
 	translate: 0 -6px;
 }
@@ -116,7 +117,41 @@ header a:hover::after, header a:focus::after, header a:disabled::after {
 .darkTheme .theme-switcher svg:last-child {
     display: none;
 }
-
+.totop {
+	left: auto;
+	right: 1em;
+	/* display: none; */
+	scale: 0;
+	rotate: 180deg;
+	transition: scale 0.3s, rotate 0.3s, translate 0.1s, box-shadow 0.1s;
+}
+.totop::before, .totop::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+.totop::before {
+	background-color: var(--color);
+	width: 0.15em;
+	height: 1.4em;
+	translate: 0 -50%;
+}
+.totop::after {
+	border: solid var(--color) 0.15em;
+	width: 1.0em;
+	height: 1.0em;
+	border-left: none;
+	border-bottom: none;
+	border-top-right-radius: 0.3em;
+	rotate: -45deg;
+	translate: -45% -52%;
+}
+.totop-visible {
+	/* display: block; */
+	scale: 1;
+	rotate: 0deg;
+}
 
 .button-corners::before, .button-corners::after {
 	content: "";
