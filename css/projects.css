@@ -146,7 +146,7 @@ p:last-child {
 	display: none;
 	font-size: 1.1rem;
 }
-.open-description-inp:checked ~ .description {
+.open-description-inp:checked ~ .description, .description-open {
 	display: block;
 }
 
