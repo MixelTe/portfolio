@@ -46,6 +46,9 @@ a {
 .link:hover {
 	text-decoration: underline;
 }
+ul {
+	margin: 0;
+}
 
 
 header {
