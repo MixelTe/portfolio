@@ -1,5 +1,8 @@
 .card {
 	flex-basis: calc(50% - 7em);
+	min-width: 300px;
+	max-width: 640px;
+	box-sizing: border-box;
 }
 .card h1 {
 	text-align: center;
