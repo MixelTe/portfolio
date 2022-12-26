@@ -10,6 +10,7 @@ body {
 	margin: 0;
 	width: 100%;
 	max-width: 800px;
+	min-width: 320px;
 	font-family: 'PT Sans', Arial, Helvetica, sans-serif;
 	transition: color, background-color;
 	transition-duration: 0.3s;
@@ -191,8 +192,7 @@ header a:hover::after, header a:focus::after, header a:disabled::after {
 }
 
 .page {
-	padding-top: 2em;
-	padding-bottom: 3em;
+	padding: 2em 1em 3em 1em;
 }
 
 .list {
@@ -238,6 +238,7 @@ header a:hover::after, header a:focus::after, header a:disabled::after {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	gap: 2em;
 }
 .cards-wide > .card {
 	flex-basis: 100%;
@@ -247,7 +248,6 @@ header a:hover::after, header a:focus::after, header a:disabled::after {
 	background-color: var(--header-color);
 	padding: 2em;
 	border-radius: 2em;
-	margin: 1em;
 	flex-grow: 1;
 }
 .card-wide {

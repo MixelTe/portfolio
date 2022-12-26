@@ -5,7 +5,7 @@
 .filter label {
 	flex-grow: 1;
 	min-width: fit-content;
-	max-width: 20%;
+	max-width: 50%;
 }
 .filter input {
 	position: absolute;
@@ -49,7 +49,6 @@ p:last-child {
 .head-img {
 	display: flex;
 	justify-content: center;
-	flex-grow: 1;
 	height: 100%;
 }
 .head-img img {
@@ -61,14 +60,16 @@ p:last-child {
 .head-text {
 	display: flex;
 	flex-direction: column;
-	min-width: 15em;
+	min-width: 12em;
 	flex-grow: 10;
 }
 .head-title {
 	display: flex;
+	flex-wrap: wrap;
 	margin-bottom: 0.3em;
 	align-items: center;
 	justify-content: space-between;
+	gap: 0.2em;
 }
 .head-title h1 {
 	font-size: 1.9rem;
@@ -77,19 +78,20 @@ p:last-child {
 .head-title h2 {
 	font-size: 1.2rem;
 	margin: 0;
-	margin-left: 0.2em;
+	margin-left: auto;
 }
 .head-description {
 	font-size: 1.1rem;
 }
 .tags {
 	display: flex;
+	flex-wrap: wrap;
 	margin-bottom: 0.4em;
+	gap: 0.5em;
 }
 .tags > * {
 	padding: 0.4em;
 	background-color: var(--second-color);
-	margin-right: 0.5em;
 	border-radius: 0.6em;
 }
 .head-footer {

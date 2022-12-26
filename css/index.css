@@ -1,6 +1,6 @@
 .avatar {
-	width: 15em;
-	height: 15em;
+	width: 12em;
+	height: 12em;
 	border-radius: 1em;
 	background: radial-gradient(gray 20%, transparent 70%, transparent);
 }
