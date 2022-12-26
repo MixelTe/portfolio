@@ -205,10 +205,11 @@ header a:hover::after, header a:focus::after, header a:disabled::after {
 	padding-left: 1.2em;
 }
 .list > *:not(.list) {
-	display: block;
+	display: flex;
 	padding: 0.2em;
-	padding-right: 1.5em;
+	margin-right: 1.5em;
 	position: relative;
+	align-items: center;
 }
 .list > *:not(.list)::before {
 	content: "";
@@ -232,6 +233,9 @@ header a:hover::after, header a:focus::after, header a:disabled::after {
 }
 .list > .list-h {
 	flex-basis: 100%;
+}
+.list-h:not(:first-child) {
+	margin-top: 0.3em;
 }
 
 .cards {
