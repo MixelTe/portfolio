@@ -10,6 +10,11 @@
 	border-radius: 1em;
 }
 
+h1 {
+	margin-block-start: 0.4em;
+	margin-block-end: 0.4em;
+}
+
 .links {
 	display: flex;
 }
@@ -52,4 +57,9 @@
 }
 .icon-lang::before {
 	display: none;
+}
+
+.gray {
+	filter: grayscale(1);
+	opacity: 0.5;
 }
