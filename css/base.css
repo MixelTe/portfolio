@@ -116,6 +116,10 @@ header a:hover::after, header a:focus::after, header a:disabled::after {
 	box-shadow: inset -2px 4px 3px -1px #ffffff9c, inset 2px -2px 3px 1px black, 0 6px 4px 2px gray;
 	translate: 0 -6px;
 }
+.theme-switcher:active, .totop:active {
+	box-shadow: inset -2px 4px 3px -2px black, inset 2px -2px 4px -1px black, 0 2px 3px 1px gray;
+	translate: 0 -2px;
+}
 .theme-switcher svg {
 	width: 2em;
 	justify-self: flex-end;
@@ -258,3 +262,6 @@ header a:hover::after, header a:focus::after, header a:disabled::after {
 	flex-basis: 100%;
 }
 
+.center {
+	text-align: center;
+}
