@@ -29,6 +29,8 @@ function onFilter(el)
 
 		const pj_tags = pj.getAttribute("data-tags").split(";");
 		let hasTag = pj_tags.includes(tag);
-		if (!hasTag) pj.style.display = "none";
+		if (!hasTag)
+			if (tag != "js" || !pj_tags.includes("ts"))
+				pj.style.display = "none";
 	}
 }

@@ -41,18 +41,12 @@
 				</p>
 			</div>
 			<div class="card">
-				<h1>2016 г.</h1>
+				<h1>2016 - 2017 г.</h1>
 				<div class="image"><img src="./imgs/mindstorms.jpeg" alt="Image" class="pimg"></div>
-				<h2>Lego Mindstorms</h2>
+				<h2>Lego Mindstorms; Code.org</h2>
 				<p>
-					Управление роботом Lego на языке похожем на Scratch.
-				</p>
-			</div>
-			<div class="card">
-				<h1>2017 г.</h1>
-				<div class="image"><img src="./imgs/code-org.png" alt="Image" class="pimg"></div>
-				<h2>Code.org</h2>
-				<p>
+					Программирование робота Lego
+					<br>
 					Прохождение курсов на сайте <a href="http://code.org/" target="_blank" class="link">Code.org</a>
 				</p>
 			</div>
@@ -61,24 +55,8 @@
 				<div class="image"><img src="./imgs/js.png" alt="Image" class="pimg"></div>
 				<h2>Javascript</h2>
 				<p>
-					Начало полноценного изучения программирования. Самостоятельное изучения языка без курсов, с помощью интернета.
-				</p>
-			</div>
-			<div class="card">
-				<h1>18.03.2020</h1>
-				<div class="image"><img src="./imgs/avatar.jpg" alt="Image" class="pimg"></div>
-				<h2>Javascript</h2>
-				<p>
-					Начало разработки первой программы - <a href="projects.html#p-1" target="_blank"  class="link">игра платформер</a> на html canvas.
-					Благодоря чему хорошо изучил js.
-				</p>
-			</div>
-			<div class="card">
-				<h1>25.05.2020</h1>
-				<div class="image"><img src="./imgs/game-of-life.png" alt="Image" class="pimg"></div>
-				<h2>Game of Life: HTML и CSS</h2>
-				<p>
-					Изучение HTML и CSS в процессе воссоздания <a href="projects.html#p-2" target="_blank"  class="link">игры</a>.
+					Начало полноценного изучения программирования. Самостоятельное изучения языка в процессе создания
+					<a href="projects.html#p-1" target="_blank"  class="link">игры платформер</a>.
 				</p>
 			</div>
 			<div class="card">
@@ -108,9 +86,9 @@
 			<div class="card">
 				<h1>01.10.2020</h1>
 				<div class="image"><img src="./imgs/yalyc.jpg" alt="Image" class="pimg"></div>
-				<h2>Яндекс.Лицей: python</h2>
+				<h2>Яндекс.Лицей</h2>
 				<p>
-					Начало занятий на курсе Яндекс.Лицей по изучению питона.
+					Изучение python.
 				</p>
 			</div>
 			<div class="card">
@@ -143,9 +121,9 @@
 			<div class="card">
 				<h1>12.12.2021</h1>
 				<div class="image"><img src="./imgs/the-legend-of-pirate.png" alt="Image" class="pimg"></div>
-				<h2>The Legend of Pirate</h2>
+				<h2>PyGame</h2>
 				<p>
-					Разработка <a href="projects.html#p-16" target="_blank" class="link">игры</a> на PyGame.
+					Разработка <a href="projects.html#p-16" target="_blank" class="link">игры The Legend of Pirate</a> на PyGame.
 				</p>
 			</div>
 			<div class="card">
@@ -174,14 +152,28 @@
 			</div>
 			<div class="card">
 				<h1>12.2022</h1>
-				<div class="image"><img src="./imgs/own_project.jpg" alt="Image" class="pimg"></div>
+				<div class="image"><img src="./imgs/own_project.jpg" alt="Image" class="pimg" loading="lazy"></div>
 				<h2>Сайт-визитка команды</h2>
 				<p>
 					<a href="projects.html#p-22" target="_blank" class="link">Учебный проект</a>
 					 второго этапа Интенсива Академии Яндекса. Разработка велась в команде из 4-х человек.
 				</p>
 			</div>
+			<div class="card">
+				<h1>05.02.2023</h1>
+				<div class="image"><img src="./imgs/yalyc_int.svg" alt="Image" class="pimg"></div>
+				<h2>Интенсивы Академии Яндекса</h2>
+				<p>
+					Изучение Unity и gamedev.
+				</p>
+			</div>
 		</div>
 	</div>
+
+	<script>
+		document.querySelectorAll(".card > h1").forEach(h1 =>
+			h1.innerText = h1.innerText.match(/\d\d.(\d\d.\d\d\d\d)/)?.[1] || h1.innerText
+			);
+	</script>
 </body>
 </html>
