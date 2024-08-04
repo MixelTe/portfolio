@@ -1,3 +1,11 @@
+const links = document.querySelectorAll(".link");
+for (const el of links)
+	el.addEventListener("click", onFilter.bind(null, null));
+
+const dates = document.querySelectorAll(".head-title h2");
+for (const el of dates)
+	el.innerText = el.innerText.match(/\d\d.(\d\d.\d\d\d\d)/)[1] || el.innerText;
+
 const headers = document.querySelectorAll("h1");
 for (const el of headers)
 {
@@ -15,7 +23,7 @@ const projects = document.querySelectorAll(".project");
 
 function onFilter(el)
 {
-	const tag = el.checked ? el.getAttribute("data-v") : null;
+	const tag = el?.checked ? el.getAttribute("data-v") : null;
 	for (const filterEl of filterEls)
 	{
 		if (filterEl == el) continue;
