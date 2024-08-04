@@ -37,7 +37,15 @@
 			</div>
 			<div class="card">
 				<h1>Mixel Te</h1>
-				<h2>Отсчитываю года с 2006</h2>
+				<h2>Разработчик всякого, <span id="age"></span></h2>
+				<script>
+					const ageEl = document.getElementById("age");
+					const age = new Date().getFullYear() - 2006;
+					const word = {
+						1: "год", 2: "года", 3: "года", 4: "года",
+					}[age % 10] || "лет";
+					ageEl.innerText = `${age} ${word}`;
+				</script>
 				<div class="links">
 					<a href="https://t.me/MixelTe" target="_blank">
 						<img src="./imgs/telegram.svg" alt="Telegram">
@@ -48,6 +56,9 @@
 					</a>
 					<a href="https://vk.com/mixel_te" target="_blank">
 						<img src="./imgs/vk-icon.png" alt="VK">
+					</a>
+					<a href="https://t.me/+8k32-Y1AvzgxZTAy" target="_blank">
+						<img src="./imgs/mixelDev.png" alt="Telegram group">
 					</a>
 				</div>
 			</div>
@@ -60,9 +71,13 @@
 						<img class="icon" src="./imgs/techs/html.svg" alt="HTML" title="HTML">
 						<img class="icon" src="./imgs/techs/css.svg" alt="CSS" title="CSS">
 						<img class="icon icon-dark" src="./imgs/techs/react.svg" alt="React" title="React">
-						<img class="icon" src="./imgs/techs/redux.svg" alt="Redux" title="Redux">
 						<img class="icon" src="./imgs/techs/bootstrap.svg" alt="Bootstrap" title="Bootstrap">
 						<img class="icon" src="./imgs/techs/figma.svg" alt="Figma" title="Figma">
+					</div>
+					<div class="list-h">Backend</div>
+					<div class="list">
+						<img class="icon" src="./imgs/techs/flask.svg" alt="Flask" title="Flask">
+						<img class="icon" src="./imgs/techs/django.svg" alt="Django" title="Django">
 					</div>
 					<div class="list-h">Языки</div>
 					<div class="list">
@@ -73,25 +88,19 @@
 						<div class="icon icon-lang"><span>RU</span></div>
 						<div class="icon icon-lang"><span>EN</span></div>
 					</div>
-					<div class="list-h">Python</div>
-					<div class="list">
-						<img class="icon" src="./imgs/techs/qt.svg" alt="PyQt" title="PyQt">
-						<img class="icon" src="./imgs/techs/pygame.svg" alt="Pygame" title="Pygame">
-						<img class="icon" src="./imgs/techs/flask.svg" alt="Flask" title="Flask">
-					</div>
 					<div class="list-h">
 						<img class="icon" src="./imgs/techs/unity.svg" alt="Unity" title="Unity">
 					</div>
-					<div class="list">
+					<!-- <div class="list">
 						<div>Scripting</div>
 						<div>VFX Graph</div>
 						<div>Shader Graph</div>
-					</div>
-					<div class="list-h">Прочее</div>
+					</div> -->
+					<!-- <div class="list-h">Прочее</div>
 					<div class="list">
 						<img class="icon gray" src="./imgs/techs/blender.svg" alt="Blender" title="Blender">
 						<img class="icon" src="./imgs/techs/database.png" alt="Базы данных" title="Базы данных">
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>

@@ -1,6 +1,7 @@
 const popup = document.createElement("div");
 popup.classList.add("popup");
-popup.addEventListener("click", e => { if (e.target == popup) popupClose() });
+popup.addEventListener("click", e => { if (e.target == popup) popupClose(); });
+window.addEventListener("keyup", e => { if (e.key == "Escape") popupClose(); });
 document.body.appendChild(popup);
 
 const popupBody = document.createElement("div");

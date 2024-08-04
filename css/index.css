@@ -24,6 +24,7 @@ h1 {
 }
 .links a img {
 	width: 2em;
+	border-radius: 0.5rem;
 }
 
 .icon {
