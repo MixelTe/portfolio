@@ -1,11 +1,13 @@
 .filter {
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 0.5em;
 }
-.filter label {
-	flex-grow: 1;
-	min-width: fit-content;
-	max-width: 50%;
+@media screen and (max-width: 500px) {
+	.filter {
+		grid-template-columns: 1fr 1fr;
+		gap: 0.5em;
+	}
 }
 .filter input {
 	position: absolute;
@@ -15,7 +17,6 @@
 	background-color: var(--second-color);
 	padding: 0.8em;
 	border-radius: 1em;
-	margin: 0.5em;
 	text-align: center;
 	user-select: none;
 	cursor: pointer;
@@ -152,7 +153,8 @@ p:last-child {
 	display: none;
 	font-size: 1.1rem;
 }
-.open-description-inp:checked ~ .description, .description-open {
+.open-description-inp:checked ~ .description,
+.description-open {
 	display: block;
 }
 
