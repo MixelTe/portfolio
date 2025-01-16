@@ -4,7 +4,7 @@ for (const el of links)
 
 const dates = document.querySelectorAll(".head-title h2");
 for (const el of dates)
-	el.innerText = el.innerText.match(/\d\d.(\d\d.\d\d\d\d)/)[1] || el.innerText;
+	el.innerText = el.innerText.match(/\d\d.(\d\d.\d\d\d\d)/)?.[1] || el.innerText;
 
 const headers = document.querySelectorAll("h1");
 for (const el of headers)
