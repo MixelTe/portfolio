@@ -56,6 +56,7 @@ p:last-child {
 	justify-content: center;
 	height: 100%;
 }
+.head-img video,
 .head-img img {
 	width: 100%;
 	max-height: 15em;
@@ -169,6 +170,7 @@ p:last-child {
 		grid-template-columns: 1fr;
 	}
 }
+.side-img video,
 .side-img img {
 	width: 100%;
 	border-radius: 0.5em;

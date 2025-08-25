@@ -199,49 +199,6 @@ header a:hover::after, header a:focus::after, header a:disabled::after {
 	padding: 2em 1em 3em 1em;
 }
 
-.list {
-	display: flex;
-	flex-basis: 100%;
-	flex-wrap: wrap;
-	font-size: 1.5rem;
-}
-.list > .list {
-	padding-left: 1.2em;
-}
-.list > *:not(.list) {
-	display: flex;
-	padding: 0.2em;
-	margin-right: 1.5em;
-	position: relative;
-	align-items: center;
-}
-.list > *:not(.list)::before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: -0.4em;
-	width: 0.1em;
-	height: 0.1em;
-	border-radius: 50%;
-	background-color: currentColor;
-	border: 0.1em solid currentColor;
-	transform: translate(0%, -50%);
-	transition: width, height, transform, background-color;
-	transition-duration: 0.1s;
-}
-.list > *:not(.list):hover:before {
-	background-color: transparent;
-	width: 0.35em;
-	height: 0.35em;
-	transform: translate(-25%, -50%);
-}
-.list > .list-h {
-	flex-basis: 100%;
-}
-.list-h:not(:first-child) {
-	margin-top: 0.3em;
-}
-
 .cards {
 	display: flex;
 	flex-wrap: wrap;
