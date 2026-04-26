@@ -3,7 +3,7 @@
 }
 .cards {
 	flex-wrap: nowrap;
-	flex-direction: column;
+	flex-direction: column-reverse;
 	gap: 1em;
 }
 .card {
